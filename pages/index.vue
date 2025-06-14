@@ -22,9 +22,8 @@ useHead({
     {name: 'description', content: 'Convert your images to JPG, PNG, WebP, and more online for free.'},
     {name: 'keywords', content: 'image converter, convert image, JPG, PNG, WebP, online converter'},
   ],
-})
-
-script: [
+  script: [
+    // Google tag (gtag.js)
     {
       async: true,
       src: 'https://www.googletagmanager.com/gtag/js?id=G-97VFP61WF1'
@@ -38,6 +37,7 @@ script: [
       `
     }
   ]
+})
 // export default {
 //   components: {
 //     AppHeader,
