@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import AppHeader from '~/components/AppHeader.vue'
 import ImageConverter from '~/components/ImageConverter.vue'
 import AppFooter from '~/components/AppFooter.vue' // 假设您会创建这个组件
@@ -23,14 +23,14 @@ useHead({
     {name: 'keywords', content: 'image converter, convert image, JPG, PNG, WebP, online converter'},
   ],
 })
-export default {
-  components: {
-    AppHeader,
-    ImageConverter,
-    AppFooter
-  }
-  // 您可以在这里添加页面的 meta 信息等
-}
+// export default {
+//   components: {
+//     AppHeader,
+//     ImageConverter,
+//     AppFooter
+//   }
+//   // 您可以在这里添加页面的 meta 信息等
+// }
 </script>
 
 <style>
