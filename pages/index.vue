@@ -23,6 +23,21 @@ useHead({
     {name: 'keywords', content: 'image converter, convert image, JPG, PNG, WebP, online converter'},
   ],
 })
+
+script: [
+    {
+      async: true,
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-97VFP61WF1'
+    },
+    {
+      innerHTML: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-97VFP61WF1');
+      `
+    }
+  ]
 // export default {
 //   components: {
 //     AppHeader,
