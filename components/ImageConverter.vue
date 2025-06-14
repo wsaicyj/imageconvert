@@ -221,15 +221,7 @@ import ConvertAnyFileSection from './ConvertAnyFileSection.vue';
 import WorksAnywhereSection from './WorksAnywhereSection.vue';
 import PrivacyGuaranteedSection from './PrivacyGuaranteedSection.vue';
 import DataPrioritySection from './DataPrioritySection.vue';
-import {useHead} from '@vueuse/head'
 
-useHead({
-  title: 'Image Converter - Convert Images Online',
-  meta: [
-    {name: 'description', content: 'Convert your images to JPG, PNG, WebP, and more online for free.'},
-    {name: 'keywords', content: 'image converter, convert image, JPG, PNG, WebP, online converter'},
-  ],
-})
 
 export default {
   name: 'ImageConverter', // Add a name for the component

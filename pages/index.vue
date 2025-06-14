@@ -14,7 +14,15 @@
 import AppHeader from '~/components/AppHeader.vue'
 import ImageConverter from '~/components/ImageConverter.vue'
 import AppFooter from '~/components/AppFooter.vue' // 假设您会创建这个组件
+import {useHead} from '@vueuse/head'
 
+useHead({
+  title: 'Image Converter - Convert Images Online',
+  meta: [
+    {name: 'description', content: 'Convert your images to JPG, PNG, WebP, and more online for free.'},
+    {name: 'keywords', content: 'image converter, convert image, JPG, PNG, WebP, online converter'},
+  ],
+})
 export default {
   components: {
     AppHeader,
