@@ -8,7 +8,7 @@
     </div>
     <h3>Convert Any Image</h3>
     <p>
-      FreeConvert supports more than 1500 images conversions. You can convert images. There are tons of Advanced Options to fine-tune your conversions.
+      ImageConvert supports more than 1500 images conversions. You can convert images. There are tons of Advanced Options to fine-tune your conversions.
     </p>
   </div>
 </template>

@@ -8,7 +8,7 @@
     </div>
     <h3>Works Anywhere</h3>
     <p>
-      FreeConvert is an online file converter. So it works on Windows, Mac, Linux, or any mobile device. All major browsers are supported. Simply upload a file and select a target format.
+      ImageConvert is an online file converter. So it works on Windows, Mac, Linux, or any mobile device. All major browsers are supported. Simply upload a file and select a target format.
     </p>
   </div>
 </template>

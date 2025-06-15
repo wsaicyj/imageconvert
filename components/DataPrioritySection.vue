@@ -3,7 +3,7 @@
     <div class="content-area">
       <h3>Your Data, Our Priority</h3>
       <p>
-        At ImageConvert, we go beyond just converting files—we protect them. Our robust security framework ensures that your data is always safe, whether you're converting an image, video, or document. With advanced encryption, secure data centers, and vigilant monitoring, we've covered every aspect of your data's safety.
+        At ImageConvert, we go beyond just converting images—we protect them. Our robust security framework ensures that your data is always safe, whether you're converting an image, video, or document. With advanced encryption, secure data centers, and vigilant monitoring, we've covered every aspect of your data's safety.
       </p>
     
     </div>
@@ -86,6 +86,7 @@ export default {
     flex-shrink: 0; /* Prevent features area from shrinking */
     display: flex;
     flex-direction: column;
+    padding-top: 65px;
     gap: 15px; /* Space between feature items */
 }
 

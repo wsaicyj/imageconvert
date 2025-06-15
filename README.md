@@ -1,3 +1,10 @@
+
+# ImageConvert.me - Free Online Image Converter
+
+Convert your images effortlessly with [ImageConvert.me](https://www.imageconvert.me/), a fast, free, and secure online tool. Easily transform photos and images between popular formats like **JPG, PNG, WebP, GIF, SVG**, and many more, directly in your browser. No software installation required.
+
+Our service prioritizes your privacy and data security. Files are processed quickly and automatically deleted after a few hours. Whether you need to convert a single image or multiple files, ImageConvert.me provides a simple and efficient solution.
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
@@ -73,20 +80,3 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-```bash
-…or create a new repository on the command line
-echo "# imageconvert" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/wsaicyj/imageconvert.git
-git push -u origin main
-
-
-…or push an existing repository from the command line
-git remote add origin https://github.com/wsaicyj/imageconvert.git
-git branch -M main
-git push -u origin main
-```
