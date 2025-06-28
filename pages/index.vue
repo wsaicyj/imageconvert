@@ -23,6 +23,12 @@ useHead({
     {name: 'keywords', content: 'image converter, convert image, JPG, PNG, WebP, online converter'},
   ],
   script: [
+     // Google AdSense
+     {
+      async: true,
+      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2144282767555592',
+      crossorigin: 'anonymous'
+    },
     // Google tag (gtag.js)
     {
       async: true,
