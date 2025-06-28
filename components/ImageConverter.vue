@@ -1,17 +1,13 @@
 <template>
   <div class="image-converter-section">
-    <!-- 页面标题和描述 -->
     <div class="page-title">
       <h2>Image Converter</h2>
       <p>Easily convert Image from one format to another, online.</p>
     </div>
 
-    <!-- 未选择文件时的初始区域 -->
     <div class="initial-upload-area" v-if="files.length === 0">
       <div class="dashed-border-box">
-        <!-- 文件输入 -->
         <input type="file" id="imageInput" accept="image/*" multiple @change="handleFileChange">
-        <!-- "Choose Files" 按钮 (使用 label 关联 input) -->
         <label for="imageInput" class="button primary choose-files-button">
           <div class="button-main">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square"
@@ -31,14 +27,11 @@
             </svg>
           </div>
         </label>
-        <!-- 下方文字信息 -->
         <p class="upload-info">Max file size 10MB.</p>
       </div>
     </div>
 
-    <!-- 已选择文件时的文件列表区域 -->
     <div class="file-list-area" v-if="files.length > 0">
-      <!-- "Add More Files" 按钮 -->
       <div class="add-more-files-area">
         <input type="file" id="addMoreInput" accept="image/*" multiple @change="handleAddMoreFiles">
         <label for="addMoreInput" class="button primary add-more-button">
@@ -57,14 +50,12 @@
           </svg>
         </label>
       </div>
-      <!-- 文件项列表 -->
       <div class="file-item" v-for="(file, index) in files" :key="file.id">
         <div class="file-info">
           <span class="file-name">{{ file.name }}</span>
           <span class="file-size">{{ formatBytes(file.size) }}</span>
         </div>
         <div class="file-status-area">
-          <!-- 根据文件状态显示不同内容 -->
           <span v-if="file.status === 'pending'" class="status-text pending">Pending</span>
           <div v-if="file.status === 'converting'" class="status-converting">
             <span class="status-text converting">Converting</span>
@@ -76,18 +67,15 @@
           <span v-if="file.status === 'failed'" class="status-text failed">Failed</span>
         </div>
         <div class="file-options">
-          <!-- 仅在未转换或转换失败时显示格式选择 -->
           <template v-if="file.status === 'pending' || file.status === 'failed'">
             Output:
             <select v-model="file.targetFormat">
               <option value="png">PNG</option>
               <option value="jpeg">JPG</option>
               <option value="webp">WebP</option>
-              <!-- 根据需要添加更多纯前端可处理的格式 -->
             </select>
           </template>
 
-          <!-- 仅在转换完成时显示下载按钮 -->
           <a v-if="file.status === 'completed' && file.downloadUrl" :href="file.downloadUrl"
              :download="file.downloadFileName" class="button primary download-button">
             Download
@@ -100,8 +88,6 @@
             </svg>
           </a>
 
-
-          <!-- 移除按钮 -->
           <span class="icon-button remove-button" @click="removeFile(index)"><svg xmlns="http://www.w3.org/2000/svg"
                                                                                   width="16" height="16"
                                                                                   fill="currentColor"
@@ -116,9 +102,7 @@
       </div>
     </div>
 
-    <!-- 批量转换选项和转换按钮区域 -->
     <div class="bulk-convert-area" v-if="files.length > 0">
-      <!-- 批量转换选项仅在没有文件正在转换且未全部完成时显示 -->
       <div class="bulk-convert-options" v-if="!isConverting && !allFilesCompleted">
         Convert All ({{ files.length }}) to:
         <select v-model="bulkTargetFormat" @change="applyBulkFormat">
@@ -126,13 +110,10 @@
           <option value="png">PNG</option>
           <option value="jpeg">JPG</option>
           <option value="webp">WebP</option>
-          <!-- 根据需要添加更多格式 -->
         </select>
       </div>
 
-      <!-- 主要操作按钮区域 -->
       <div class="main-action-buttons">
-        <!-- Convert / Please Wait 按钮 -->
         <button
             v-if="!allFilesCompleted"
             :disabled="files.length === 0 || isConverting"
@@ -158,7 +139,6 @@
               </span>
         </button>
 
-        <!-- Convert More 按钮 (在转换完成后显示) -->
         <button v-if="allFilesCompleted" @click="handleAddMoreFilesClick" class="button secondary convert-more-button">
           Convert More
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -170,7 +150,6 @@
           </svg>
         </button>
 
-        <!-- Download All 按钮 (在转换完成后显示) -->
         <button v-if="allFilesCompleted" @click="downloadAllFiles" class="button primary download-all-button">
           Download All
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
@@ -180,7 +159,6 @@
           </svg>
         </button>
 
-        <!-- 垃圾桶图标 (在转换完成后显示) -->
         <span v-if="allFilesCompleted" class="icon-button trash-button" @click="removeAllFiles">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash"
                      viewBox="0 0 16 16">
@@ -193,17 +171,14 @@
       </div>
     </div>
 
-    <!-- 新增的信息卡片区域 -->
     <div class="info-cards-container">
       <ConvertAnyFileSection/>
       <WorksAnywhereSection/>
       <PrivacyGuaranteedSection/>
     </div>
 
-    <!-- 新增的数据优先区域 -->
     <DataPrioritySection/>
 
-    <!-- 底部提示信息 -->
     <div class="footer-info" v-if="files.length > 0">
       Converted files are automatically deleted after 8 hours to protect your privacy. Please download files before they
       are deleted.
@@ -216,7 +191,6 @@
 import JSZip from 'jszip'; // Import JSZip for creating zip files
 import FileSaver from 'file-saver'; // Import file-saver using default import
 const saveAs = FileSaver.saveAs; // Access saveAs from the default import
-// 引入新的组件
 import ConvertAnyFileSection from './ConvertAnyFileSection.vue';
 import WorksAnywhereSection from './WorksAnywhereSection.vue';
 import PrivacyGuaranteedSection from './PrivacyGuaranteedSection.vue';
@@ -493,10 +467,7 @@ export default {
 </script>
 
 <style scoped>
-/* 在这里复制和调整原 imageconvert.html 中的 CSS 样式 */
-/* 重点调整 .upload-area, 新增 .initial-upload-area, .dashed-border-box, .file-list-area, .file-item, .file-info, .file-options, .file-summary, .bulk-convert-area, .bulk-convert-options, .convert-button, .file-status-area, .status-text, .status-converting, .progress-bar-container, .progress-bar, .download-button, .download-all-button, .convert-more-button, .trash-button 的样式 */
 
-/* 新增的信息卡片容器样式 */
 .info-cards-container {
   display: grid; /* Use grid for layout */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
@@ -536,23 +507,21 @@ export default {
 }
 
 .dashed-border-box {
-  border: 2px dashed #ccc; /* 虚线边框 */
-  border-radius: 8px; /* 圆角 */
-  padding: 40px 20px; /* 内边距 */
-  background-color: #f8f9fa; /* 浅灰色背景 */
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
   display: flex;
   flex-direction: column;
-  align-items: center; /* 垂直居中内容 */
-  justify-content: center; /* 水平居中内容 */
+  align-items: center;
+  justify-content: center;
 }
 
-/* 隐藏文件输入 */
 .initial-upload-area input[type="file"],
 .add-more-files-area input[type="file"] {
   display: none;
 }
 
-/* 通用按钮样式 */
 .button {
   display: inline-flex;
   align-items: center;
@@ -606,7 +575,6 @@ export default {
 }
 
 
-/* "Choose Files" 按钮样式 (Split button style) */
 .choose-files-button {
   display: inline-flex; /* Use flex layout */
   align-items: center;
