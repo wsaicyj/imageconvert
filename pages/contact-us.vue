@@ -13,12 +13,22 @@
           <h2>How to Reach Us</h2>
           <p>The easiest way to contact us is via email:</p>
           <ul>
-            <li><strong>Email:</strong> <a href="mailto:support@imageconvert.me">support@imageconvert.me</a></li>
+            <li><strong>Email:</strong> support@imageconvert.me</li>
           </ul>
 
           <p>We strive to respond to all inquiries within 24-48 business hours.</p>
 
           <p>Thank you for using ImageConvert.me!</p>
+
+          <h2>Frequently Asked Questions</h2>
+          <p>Before contacting us, you might find the answer to your question in our frequently asked questions section:</p>
+          <ul>
+            <li><strong>Q: How long does it take to convert an image?</strong><br>A: Conversion usually takes only a few seconds, depending on your internet speed and the image size.</li>
+            <li><strong>Q: Are my uploaded images stored?</strong><br>A: No, your uploaded images are temporary and automatically deleted from our servers within a few hours after conversion. We do not store or share them.</li>
+            <li><strong>Q: What image formats do you support?</strong><br>A: We currently support WebP to PNG conversion. We are continuously working to add more formats.</li>
+            <li><strong>Q: Is ImageConvert.me free to use?</strong><br>A: Yes, our service is completely free for all users.</li>
+          </ul>
+          <p>If your question is not answered above, please feel free to reach out to us via email. We are here to help!</p>
         </div>
       </div>
     </main>

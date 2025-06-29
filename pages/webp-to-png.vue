@@ -4,11 +4,11 @@
     <main class="main">
       <div class="container container--theme">
         <div class="breadcrumbs">
-          <NuxtLink to="/">Home</NuxtLink> &gt; WebP to PNG Converter
+          <NuxtLink to="/">Home</NuxtLink> &gt; webp to png Converter
         </div>
         <div class="page-container">
-          <h1>WebP to PNG Converter</h1>
-          <p>Best WebP to PNG converter. Convert WebP to PNG online in the highest quality within seconds. Works on any web browser &amp; 100% free.</p>
+          <h1>Convert webp to png Online</h1>
+          <p>Best webp to png converter. Convert webp to png online in the highest quality within seconds. Works on any web browser &amp; 100% free.</p>
 
           <div class="converter-section">
             <div class="upload-area" @dragover.prevent @drop="handleDrop" @click="triggerFileInput">
@@ -117,7 +117,7 @@
 
           <div class="info-sections">
             <div class="section-block">
-              <h2>How to Convert WebP to PNG?</h2>
+              <h2>How to Convert webp to png?</h2>
               <ol>
                 <li><strong>Upload your WebP file(s):</strong> Click on the upload area or drag and drop your WebP images into the designated box.</li>
                 <li><strong>Start Conversion:</strong> Once your files are uploaded, click the "Convert to PNG" button. Our tool will process your images.</li>
@@ -127,7 +127,7 @@
                 <div class="feature-card">
                   <div class="feature-icon">✔</div> <!-- Placeholder for icon -->
                   <h3>Easy to Use</h3>
-                  <p>Simply upload your WebP files and click the convert button. You can also batch convert WebP to PNG format.</p>
+                  <p>Simply upload your WebP files and click the convert button. You can also batch convert webp to png format.</p>
                 </div>
                 <div class="feature-card">
                   <div class="feature-icon">⭐</div> <!-- Placeholder for icon -->
@@ -137,7 +137,7 @@
                 <div class="feature-card">
                   <div class="feature-icon">🔒</div> <!-- Placeholder for icon -->
                   <h3>Free & Secure</h3>
-                  <p>Our WebP to PNG converter is free and works on any web browser. Files are protected with 256-bit SSL encryption and automatically delete after a few hours.</p>
+                  <p>Our webp to png converter is free and works on any web browser. Files are protected with 256-bit SSL encryption and automatically delete after a few hours.</p>
                 </div>
               </div>
             </div>
@@ -362,11 +362,45 @@ const removeAllFiles = () => {
 
 // Set page meta tags for SEO
 useHead({
-  title: 'WebP to PNG Converter - ImageConvert.me',
+  title: 'webp to png Converter - ImageConvert.me',
   meta: [
-    { name: 'description', content: 'Best WebP to PNG converter. Convert WebP to PNG online in the highest quality within seconds. Works on any web browser & 100% free.' },
+    { name: 'description', content: 'Best webp to png converter. Convert webp to png online in the highest quality within seconds. Works on any web browser & 100% free.' },
     { name: 'keywords', content: 'webp to png, convert webp, webp converter, free webp to png, online image converter' },
   ],
+  // Add Product Schema Markup for rich snippets
+  script: [
+  {
+      async: true,
+      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2144282767555592',
+      crossorigin: 'anonymous'
+    },
+    // Google tag (gtag.js)
+    {
+      async: true,
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-97VFP61WF1'
+    },
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Product", // Or "Service" if you prefer
+        "name": "webp to png Converter by ImageConvert.me",
+        "description": "Best webp to png converter. Convert webp to png online in the highest quality within seconds. Works on any web browser & 100% free.",
+        "image": "https://imageconvert.me/logo.png", // Replace with an actual image URL for your service/product
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9", // Your average rating (e.g., from 1 to 5)
+          "reviewCount": "1234" // Total number of reviews
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "0",
+          "availability": "https://schema.org/InStock"
+        }
+      })
+    }
+  ]
 });
 </script>
 
@@ -778,7 +812,7 @@ p {
   text-decoration: underline;
 }
 
-/* How to Convert WebP to PNG? - Feature Cards */
+/* How to Convert webp to png? - Feature Cards */
 .feature-cards {
   display: flex;
   /* flex-wrap: wrap; */

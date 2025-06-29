@@ -1,0 +1,19 @@
+# This is an example llms.txt file
+
+# Allow all AI crawlers to access all content for training purposes
+User-Agent: *
+Allow: /
+Usage-Type: Training
+
+# Disallow a specific AI bot (e.g., "AIBot") from accessing /private/ directory
+User-Agent: AIBot
+Disallow: /private/
+
+# Disallow all AI crawlers from using content for commercial purposes
+User-Agent: *
+Disallow: /
+Usage-Type: Commercial
+
+# Suggest a crawl delay for all AI crawlers
+User-Agent: *
+Crawl-delay: 10

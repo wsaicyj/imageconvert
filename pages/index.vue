@@ -3,6 +3,9 @@
     <AppHeader />
     <main class="main">
       <div class="container container--theme">
+        <h1>Free Online Image Converter</h1>
+        <p>Welcome to ImageConvert.me, your go-to online tool for quick and easy image conversions. Whether you need to change formats for web optimization, sharing, or specific software requirements, our converter handles it all with simplicity and speed.</p>
+        <p>Our service supports a variety of popular image formats, ensuring your files are always compatible with your needs. Just upload your image, choose your desired output format, and let us do the rest. It's fast, free, and secure!</p>
         <ImageConverter />
       </div>
     </main>
