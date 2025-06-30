@@ -8,17 +8,27 @@
         </div>
         <div class="page-container">
           <h1>Contact Us</h1>
-          <p>We'd love to hear from you! If you have any questions, feedback, or need assistance, please don't hesitate to reach out.</p>
+          <p>We'd love to hear from you! If you have any questions, feedback, or need assistance, please don't hesitate to reach out. Your input is invaluable as we strive to improve ImageConvert.me and provide the best possible service.</p>
 
           <h2>How to Reach Us</h2>
-          <p>The easiest way to contact us is via email:</p>
+          <p>The easiest and most efficient way to get in touch with our support team is via email. We aim to provide timely and helpful responses to all your queries.</p>
           <ul>
             <li><strong>Email:</strong> support@imageconvert.me</li>
           </ul>
 
-          <p>We strive to respond to all inquiries within 24-48 business hours.</p>
+          <p>We strive to respond to all inquiries within 24-48 business hours, Monday through Friday. Please note that response times may vary during weekends and public holidays.</p>
 
-          <p>Thank you for using ImageConvert.me!</p>
+          <h2>What Can We Help You With?</h2>
+          <p>Feel free to contact us for a variety of reasons, including:</p>
+          <ul>
+            <li><strong>Technical Support:</strong> If you encounter any issues with the conversion process, file uploads, or downloads.</li>
+            <li><strong>Feature Requests:</strong> Have an idea for a new feature or a format you'd like us to support? Let us know!</li>
+            <li><strong>General Feedback:</strong> Your suggestions help us make ImageConvert.me better for everyone.</li>
+            <li><strong>Partnership Inquiries:</strong> For potential collaborations or business proposals.</li>
+            <li><strong>Privacy Concerns:</strong> Questions regarding our Privacy Policy or data handling practices.</li>
+          </ul>
+
+          <p>Thank you for choosing ImageConvert.me! We are committed to providing a seamless and reliable image conversion experience, and our support team is here to ensure your satisfaction.</p>
 
           <h2>Frequently Asked Questions</h2>
           <p>Before contacting us, you might find the answer to your question in our frequently asked questions section:</p>

@@ -36,12 +36,7 @@
 
           <h2>Cookies and Web Beacons</h2>
           <p>Like any other website, ImageConvert.me uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
-          <p>We use third-party services that may also use cookies:</p>
-          <ul>
-            <li><strong>Google Analytics:</strong> We use Google Analytics to help us understand how our visitors use the site. Google Analytics collects information anonymously. It reports website trends without identifying individual visitors. You can opt-out of Google Analytics without affecting how you visit our site – for more information on opting out of Google Analytics across all websites you use, visit this Google page: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">https://tools.google.com/dlpage/gaoptout</a>.</li>
-            <li><strong>Google AdSense:</strong> Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google Ad and Content Network Privacy Policy at the following URL – <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/ads</a>.</li>
-          </ul>
-
+        
           <h2>Third Party Privacy Policies</h2>
           <p>ImageConvert.me's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.</p>
 
