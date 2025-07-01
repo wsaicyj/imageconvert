@@ -57,7 +57,7 @@
 
           <p>If you have any questions about this Privacy Policy, please contact us:</p>
           <ul>
-            <li>By email: contact@imageconvert.me</li>
+            <li>By email: <a href="mailto:contact@imageconvert.me">contact@imageconvert.me</a></li>
           </ul>
         </div>
       </div>

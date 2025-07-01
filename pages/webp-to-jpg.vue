@@ -387,6 +387,7 @@
           "name": "WebP to JPG Converter by ImageConvert.me",
           "description": "Convert WebP images to JPG format online for free. Optimize file size for web and maintain good image quality with our easy-to-use converter.",
           "url": "https://www.imageconvert.me/webp-to-jpg",
+          "image": "https://www.imageconvert.me/logo.png",
           "offers": {
             "@type": "Offer",
             "price": "0",

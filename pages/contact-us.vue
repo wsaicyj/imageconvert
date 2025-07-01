@@ -13,7 +13,7 @@
           <h2>How to Reach Us</h2>
           <p>The easiest and most efficient way to get in touch with our support team is via email. We aim to provide timely and helpful responses to all your queries.</p>
           <ul>
-            <li><strong>Email:</strong> support@imageconvert.me</li>
+            <li><strong>Email:</strong> <a href="mailto:support@imageconvert.me">support@imageconvert.me</a></li>
           </ul>
 
           <p>We strive to respond to all inquiries within 24-48 business hours, Monday through Friday. Please note that response times may vary during weekends and public holidays.</p>
