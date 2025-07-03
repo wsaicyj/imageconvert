@@ -30,8 +30,11 @@ export default defineNuxtConfig({
       routes: [
         '/',
         '/webp-to-png',
+        '/webp-to-jpg',
         '/privacy-policy',
         '/contact-us',
+        '/avif-to-png', 
+        '/avif-to-jpg',
         // If you have other pages, add their paths here
       ],
       // You can also configure other options, for example:

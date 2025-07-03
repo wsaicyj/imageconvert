@@ -186,10 +186,12 @@
       </div>
     </main>
     <AppFooter />
+    <Analytics/>
   </div>
 </template>
 
 <script setup>
+import { Analytics } from '@vercel/analytics/nuxt'
 import { ref, computed } from 'vue';
 import { useHead } from '@vueuse/head';
 import AppHeader from '~/components/AppHeader.vue';

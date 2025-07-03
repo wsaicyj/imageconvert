@@ -26,6 +26,7 @@
       </div>
     </main>
     <AppFooter />
+    <Analytics/>
   </div>
 </template>
 
@@ -34,6 +35,7 @@ import AppHeader from '~/components/AppHeader.vue'
 import ImageConverter from '~/components/ImageConverter.vue'
 import AppFooter from '~/components/AppFooter.vue'
 import {useHead} from '@vueuse/head'
+import { Analytics } from '@vercel/analytics/nuxt'
 
 useHead({
   title: 'Image Converter - Convert Images Online',
