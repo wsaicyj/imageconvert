@@ -70,9 +70,10 @@
           <template v-if="file.status === 'pending' || file.status === 'failed'">
             Output:
             <select v-model="file.targetFormat">
-              <option value="png">PNG</option>
-              <option value="jpeg">JPG</option>
-              <option value="webp">WebP</option>
+              <option value="png">png</option>
+              <option value="jpeg">jpg</option>
+              <option value="webp">webp</option>
+              <option value="avif">avif</option>
             </select>
           </template>
 
@@ -107,9 +108,10 @@
         Convert All ({{ files.length }}) to:
         <select v-model="bulkTargetFormat" @change="applyBulkFormat">
           <option value="" disabled>Select</option> <!-- Placeholder option -->
-          <option value="png">PNG</option>
-          <option value="jpeg">JPG</option>
-          <option value="webp">WebP</option>
+          <option value="png">png</option>
+          <option value="jpeg">jpeg</option>
+          <option value="webp">webp</option>
+          <option value="avif">avif</option>
         </select>
       </div>
 
@@ -366,6 +368,10 @@ export default {
                   case 'webp':
                     mimeType = 'image/webp';
                     fileExtension = 'webp';
+                    break;
+                  case 'avif': // Add AVIF case
+                    mimeType = 'image/avif';
+                    fileExtension = 'avif';
                     break;
                   case 'png':
                   default:

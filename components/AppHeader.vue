@@ -6,10 +6,17 @@
       <nav>
         <ul>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle">WebP <span class="dropdown-arrow"></span></a>
+            <a href="#" class="dropdown-toggle">webp <span class="dropdown-arrow"></span></a>
             <ul class="dropdown-menu">
-              <li><NuxtLink to="/webp-to-png">WebP to PNG</NuxtLink></li>
-              <li><NuxtLink to="/webp-to-jpg">WebP to JPG</NuxtLink></li>
+              <li><NuxtLink to="/webp-to-png">webp to png</NuxtLink></li>
+              <li><NuxtLink to="/webp-to-jpg">webp to jpg</NuxtLink></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">avif <span class="dropdown-arrow"></span></a>
+            <ul class="dropdown-menu">
+              <li><NuxtLink to="/avif-to-png">avif to png</NuxtLink></li>
+              <li><NuxtLink to="/avif-to-jpg">avif to jpg</NuxtLink></li>
             </ul>
           </li>
           <!-- Add more navigation links here if needed -->
